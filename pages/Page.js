@@ -1,10 +1,9 @@
 import { h } from 'hyposcript'
 import { Box } from 'hypobox'
-import { head } from 'presta/head'
 
 import { Nav } from '@/components/Nav'
 
-export function Page ({ pathname }) {
+export function Page ({ pathname, head }) {
   head({ title: pathname })
 
   return (

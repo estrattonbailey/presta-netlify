@@ -1,6 +1,5 @@
 import { h } from 'hyposcript'
 import { Box } from 'hypobox'
-import { head } from 'presta/head'
 import { load } from 'presta/load'
 
 import { Nav } from '@/components/Nav'
@@ -9,7 +8,7 @@ export function getPaths () {
   return ['/']
 }
 
-export function Page ({ pathname }) {
+export function Page ({ pathname, head }) {
   const page = load(
     () => {
       return new Promise(y => {

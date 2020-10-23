@@ -1,7 +1,7 @@
 import { render } from 'presta/render'
 
 import { Page } from '@/pages/Page'
-import { createDocument } from '@/presta.runtime.js'
+import { createDocument } from '@/presta.config.js'
 
 export async function handler (ev) {
   const { body, data } = await render(Page, { pathname: ev.path })

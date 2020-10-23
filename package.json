@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "serve": "npx netlify dev",
-    "build": "npx webpack && npx presta build",
+    "build": "npx presta build && npx webpack",
     "server:watch": "npx webpack -w",
     "static:watch": "npx presta watch",
     "format": "prettier-standard --format"
@@ -31,8 +31,8 @@
     "webpack-cli": "^3.3.12"
   },
   "dependencies": {
-    "hypobox": "^0.2.1",
-    "hyposcript": "^0.3.0",
-    "presta": "^0.5.0"
+    "hypobox": "^1.2.1",
+    "hyposcript": "^1.0.1",
+    "presta": "^0.13.0"
   }
 }
